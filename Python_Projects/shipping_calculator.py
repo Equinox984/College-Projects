@@ -9,11 +9,11 @@ print(separator, "\n")
 
 # User Information Messages
 weight = float(input("Enter the total weight (kg) of your order -> ").strip())
-destination = str(
-    input("Please choose your shipping destination (Domestic/International) -> ").strip().upper())
+destination = int(
+    input("Please choose your shipping destination (1 for Domestic/ 2 for International) -> ").strip())
 
 # Domestic Calculation Process
-if destination == "DOMESTIC":
+if destination == 1:
     print("\nCalculating Domestic Shipping...\n")
     if weight <= 2:
         shipping_cost = 5.0
@@ -23,7 +23,7 @@ if destination == "DOMESTIC":
         shipping_cost = 15.0
 
 # International Calculation Process
-elif destination == "INTERNATIONAL":
+elif destination == 2:
     print("\nCalculating International Shipping...\n")
     if weight <= 1:
         shipping_cost = 15.0
