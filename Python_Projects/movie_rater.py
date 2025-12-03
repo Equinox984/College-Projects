@@ -1,26 +1,55 @@
 """The Movie Rater"""
 
-# Welcome Message
-separator = "==============================="
-results = "===== Results ====="
-print(separator)
-print("Hello! Welcome to Equinox Movie Rater!")
-print(separator, "\n")
+# Constants
+SEPARATOR = "==============================="
+RESULTS_HEADER = "===== Results ====="
+WELCOME_MESSAGE = "Hello! Welcome to Equinox Movie Rater!"
+AGE_PROMPT = "Write your Age -> "
+INVALID_AGE_MESSAGE = "That's not a valid age. Please enter a number."
 
-# Process
-user_age = int(input("Write your Age -> ").strip())
-if user_age < 7:
-    print("\n", results)
-    print("You should watch G-rated movies.\n")
 
-elif user_age < 13:
-    print("\n", results)
-    print("You can watch PG-rated movies.\n")
+def get_age_rating(age: int) -> str:
+    """
+    Determines the movie rating based on the user's age.
 
-elif user_age < 17:
-    print("\n", results)
-    print("You can watch PG-13 rated movies.\n")
+    Args:
+        age (int): The age of the user.
 
-else:
-    print("\n", results)
-    print("You can watch R-rated movies.\n")
+    Returns:
+        str: The recommended movie rating.
+    """
+    if age < 7:
+        return "You should watch G-rated movies."
+    elif age < 13:
+        return "You can watch PG-rated movies."
+    elif age < 17:
+        return "You can watch PG-13 rated movies."
+    else:
+        return "You can watch R-rated movies."
+
+
+def main():
+    """
+    Main function to run the movie rater program.
+    """
+    print(SEPARATOR)
+    print(WELCOME_MESSAGE)
+    print(SEPARATOR, "\n")
+
+    while True:
+        user_input = input(AGE_PROMPT).strip()
+        try:
+            user_age = int(user_input)
+            if user_age < 0:
+                print(INVALID_AGE_MESSAGE)
+                continue
+            break  # Exit loop if age is valid
+        except ValueError:
+            print(INVALID_AGE_MESSAGE)
+
+    print("\n", RESULTS_HEADER)
+    print(get_age_rating(user_age), "\n")
+
+
+if __name__ == "__main__":
+    main()
