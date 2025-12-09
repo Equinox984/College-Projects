@@ -16,8 +16,10 @@ The content is divided into technical categories:
 - **`Python_Projects/`**: Scripts, automations, and logic exercises.
 
 ## 🚀 Installation and Use
-
-If you want to clone and run these projects in your local environment (Linux Recommended):
+- **Requirement**: Have **Git** installed on your system.
+  
+  
+If you want to clone and run these projects in your local environment, follow this steps:
 
 1. **Clone the Repository:**
    ```bash
