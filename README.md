@@ -21,5 +21,5 @@ If you want to clone and run these projects in your local environment (Linux Rec
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/Equinox984/College-Projects.git](https://github.com/Equinox984/College-Projects.git)
+   git clone https://github.com/Equinox984/College-Projects
    cd College-Projects
