@@ -3,8 +3,6 @@ from calculator.utils import get_number, print_result
 
 
 def main():
-    print("Welcome to the Modular Calculator!")
-
     while True:
         try:
             choice = int(
