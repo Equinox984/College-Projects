@@ -59,6 +59,7 @@ Enter your choice (1-5) -> """)
             print("Bye! See you next time.")
             break
         else:
+            clear_screen()
             print("Invalid choice. Please try again.")
 
 
