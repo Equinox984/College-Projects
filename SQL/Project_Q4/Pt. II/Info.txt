@@ -1,0 +1,27 @@
+Data Insertion (5 pts) 
+
+Task: Populate the database 
+
+Requirements: 
+
+At least 3 customers  
+
+At least 4 products  
+
+At least 5 orders  
+
+Data must be consistent (valid relationships)  
+
+Deliverable: 
+
+SQL code showing INSERT INTO statements  
+
+Rubric (5 pts): 
+
+5 pts: Complete and correct data with valid relationships  
+
+3–4 pts: Minor issues or missing entries  
+
+1–2 pts: Incomplete or inconsistent data  
+
+0 pts: Not attempted  
