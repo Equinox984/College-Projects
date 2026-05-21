@@ -26,5 +26,5 @@ LIMIT 1;
 
 -- Thanks to our data, we know that Christian Roque is the customer who has spent the most money in the store ($338.99), 
 -- the 24" monitor is the most expensive product ($249), 
--- and the mechanical keyboard is the most popular product among customers. 
+-- and the USB-C Hub is the most popular product among customers. 
 -- Finally, we know that all customers have spent a total of $559.96 in our store.
