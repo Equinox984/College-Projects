@@ -24,6 +24,7 @@ GROUP BY oi.product_id
 ORDER BY units_sold DESC
 LIMIT 1;
 
+-- What does your data show?  
 -- Thanks to our data, we know that Christian Roque is the customer who has spent the most money in the store ($338.99), 
 -- the 24" monitor is the most expensive product ($249), 
 -- and the USB-C Hub is the most popular product among customers. 
